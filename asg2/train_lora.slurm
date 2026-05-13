@@ -9,9 +9,19 @@
 #SBATCH --mem=64G
 #SBATCH --time=12:00:00
 
+# Usage:
+# sbatch train_lora.slurm /path/to/venv
+
+VENV_PATH=$1
+
+if [ -z "$VENV_PATH" ]; then
+    echo "Usage: sbatch train_lora.slurm /path/to/venv"
+    exit 1
+fi
+
 mkdir -p logs
 
-source venv/bin/activate
+source "$VENV_PATH/bin/activate"
 
 export HF_HOME=$PWD/hf_cache
 export TRANSFORMERS_OFFLINE=1

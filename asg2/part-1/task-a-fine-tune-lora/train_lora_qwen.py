@@ -27,24 +27,46 @@ def load_json_dataset(path):
     rows = []
 
     for ex in data:
-        question = (
-            ex.get("question")
-            or ex.get("prompt")
-            or ex.get("user")
-            or ex.get("input")
-        )
+        if "messages" in ex:
+            messages = ex["messages"]
 
-        answer = (
-            ex.get("answer")
-            or ex.get("response")
-            or ex.get("assistant")
-            or ex.get("output")
-        )
+            user_msg = next(
+                (m["content"] for m in messages if m.get("role") == "user"),
+                None,
+            )
 
-        if question is None or answer is None:
-            raise ValueError(f"Could not find question/answer keys in example: {ex}")
+            assistant_msg = next(
+                (m["content"] for m in messages if m.get("role") == "assistant"),
+                None,
+            )
 
-        text = f"""<|im_start|>user
+            if user_msg is None or assistant_msg is None:
+                raise ValueError(f"Could not find user/assistant messages in example: {ex}")
+
+            text = f"""<|im_start|>user
+{user_msg}<|im_end|>
+<|im_start|>assistant
+{assistant_msg}<|im_end|>"""
+
+        else:
+            question = (
+                ex.get("question")
+                or ex.get("prompt")
+                or ex.get("user")
+                or ex.get("input")
+            )
+
+            answer = (
+                ex.get("answer")
+                or ex.get("response")
+                or ex.get("assistant")
+                or ex.get("output")
+            )
+
+            if question is None or answer is None:
+                raise ValueError(f"Could not find question/answer keys in example: {ex}")
+
+            text = f"""<|im_start|>user
 {question}<|im_end|>
 <|im_start|>assistant
 {answer}<|im_end|>"""
@@ -66,7 +88,7 @@ def main():
 
     model = AutoModelForCausalLM.from_pretrained(
         MODEL_PATH,
-        torch_dtype=torch.bfloat16,
+        dtype=torch.float16,
         device_map="auto",
         trust_remote_code=True,
         local_files_only=True,
@@ -117,8 +139,8 @@ def main():
         logging_steps=10,
         save_steps=100,
         save_total_limit=2,
-        bf16=True,
-        fp16=False,
+        bf16=False,
+        fp16=True,
         optim="adamw_torch",
         report_to="none",
         remove_unused_columns=False,

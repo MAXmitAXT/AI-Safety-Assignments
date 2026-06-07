@@ -1,0 +1,121 @@
+annotation_id,source,doc_index,n_chars,n_sentences,topic,quality_1_10,cleaning_ok,private,harmful,notes,filter_says_private,filter_flagged_count,filter_flagged_types
+1,c4,2263,3456,35,blog post,7,yes,no,no,,yes,9,"private_date,private_person"
+2,finepdfs,233,26425,226,product page,7,yes,no,no,,yes,2,private_person
+3,c4,2254,1494,22,nav menu,2,no,no,no,mixed search results and unrelated content fragments,no,0,
+4,c4,2255,725,7,product page,5,yes,no,no,,no,0,
+5,finepdfs,207,3317,34,medical guide,7,yes,no,no,,no,0,
+6,fineweb,938,3542,38,news article,7,yes,no,no,,yes,32,private_person
+7,fineweb,913,800,8,news article,6,yes,no,no,,no,0,
+8,c4,2260,981,9,product page,4,yes,no,no,,no,0,
+9,fineweb,927,879,7,forum post,6,yes,no,no,,no,0,
+10,c4,2253,827,9,blog post,5,no,no,no,two unrelated topics merged,no,0,
+11,fineweb,931,4439,45,news article,7,yes,no,no,,yes,31,"private_person,private_phone"
+12,fineweb,922,5583,43,event listing,6,yes,no,no,,yes,14,private_person
+13,finepdfs,226,1555,8,form,5,yes,no,no,,no,0,
+14,c4,2266,512,4,nav menu,3,no,no,no,website nav/UI fragment,no,0,
+15,finepdfs,225,409,1,product page,5,yes,no,no,,yes,2,private_person
+16,c4,2280,6212,46,academic page,7,yes,no,no,,no,0,
+17,finepdfs,223,38292,6,academic paper,6,yes,yes,no,seniority list with full faculty names and hire dates,yes,130,"private_date,private_person"
+18,finepdfs,215,26663,9,government doc,6,yes,yes,no,candidate names in government selection list,yes,62,private_person
+19,c4,2269,479,5,product page,6,yes,no,no,,no,0,
+20,finepdfs,204,6403,50,academic paper,6,yes,no,no,,yes,3,private_person
+21,finepdfs,229,13208,86,academic paper,8,yes,no,no,,no,0,
+22,c4,2267,397,3,forum post,5,yes,no,no,,no,0,
+23,finepdfs,219,9080,5,financial doc,5,yes,no,no,,yes,6,"account_number,private_person"
+24,finepdfs,206,37749,225,academic paper,7,yes,no,no,German language,yes,6,private_date
+25,c4,2272,496,4,technical guide,6,yes,no,no,,no,0,
+26,c4,2259,3040,24,blog post,7,yes,no,no,,no,0,
+27,c4,2282,3184,33,product page,6,yes,no,no,,no,0,
+28,fineweb,920,775,6,blog post,6,yes,no,no,,no,0,
+29,finepdfs,211,18746,18,nav menu,2,no,no,no,"website UI/nav fragment, leftover login elements",yes,174,"private_date,private_person,private_url"
+30,c4,2276,6269,50,blog post,7,yes,no,no,,no,0,
+31,c4,2271,599,11,forum post,5,yes,no,no,,yes,2,private_date
+32,finepdfs,221,37452,10,government doc,6,yes,no,no,,no,0,
+33,finepdfs,218,22176,256,sports data,4,no,no,no,"table-heavy, broken layout",yes,13,private_person
+34,finepdfs,216,30016,76,product page,5,yes,no,no,,yes,2,private_person
+35,fineweb,926,407,2,wikipedia,6,yes,no,no,,no,0,
+36,finepdfs,224,5841,62,wikipedia,8,yes,no,no,,no,0,
+37,c4,2274,995,11,product page,5,yes,no,no,,no,0,
+38,fineweb,924,6373,46,news article,7,yes,no,no,,yes,6,private_person
+39,finepdfs,210,3463,11,academic paper,6,yes,no,no,,no,0,
+40,fineweb,935,4852,38,news article,7,yes,no,no,,yes,1,private_person
+41,finepdfs,213,3048,28,government doc,5,yes,no,no,,yes,137,"private_date,private_person"
+42,finepdfs,214,23151,104,job posting,7,yes,yes,no,recruiter email address visible,yes,4,private_person
+43,fineweb,930,3925,35,product page,4,no,no,no,browser upgrade notice mixed in,yes,2,private_person
+44,c4,2256,400,4,product page,6,yes,no,no,,no,0,
+45,c4,2265,2560,22,blog post,7,yes,no,no,,no,0,
+46,finepdfs,230,3150,16,government doc,6,yes,no,no,,no,0,
+47,fineweb,919,2560,11,news article,6,yes,no,no,,yes,28,private_person
+48,finepdfs,208,12234,123,event listing,5,yes,no,no,,no,0,
+49,c4,2270,952,22,blog post,6,yes,no,no,,no,0,
+50,finepdfs,220,9110,39,academic paper,7,yes,no,no,Chinese language,no,0,
+51,fineweb,914,1127,8,news article,7,yes,no,no,,yes,4,"private_email,private_person"
+52,fineweb,928,4792,60,blog post,5,yes,no,no,,yes,8,private_person
+53,finepdfs,212,5091,13,financial doc,4,no,no,no,"table-heavy, broken extraction",yes,4,"private_date,private_person"
+54,c4,2258,153,4,blog post,5,yes,no,no,,no,0,
+55,fineweb,934,848,16,product page,3,no,no,no,shopping cart UI fragment,no,0,
+56,finepdfs,232,5390,44,government doc,6,yes,no,no,,no,0,
+57,fineweb,936,4182,35,blog post,6,yes,no,no,,yes,9,"private_person,private_url"
+58,fineweb,917,823,5,blog post,6,yes,no,no,,no,0,
+59,fineweb,918,1831,16,news article,7,yes,no,no,,no,0,
+60,fineweb,933,2701,31,blog post,7,yes,no,no,,yes,6,private_date
+61,finepdfs,222,2440,1,event listing,4,no,no,no,broken table structure,yes,38,"private_date,private_person"
+62,c4,2279,3151,20,blog post,6,yes,no,no,,no,0,
+63,fineweb,921,9564,102,blog post,6,yes,no,no,,yes,2,private_person
+64,c4,2261,819,11,academic paper,6,yes,no,no,,yes,3,private_person
+65,finepdfs,217,1069,2,academic paper,5,no,no,no,garbled characters in extraction,no,0,
+66,c4,2275,2213,37,forum post,6,yes,no,no,,yes,17,private_person
+67,fineweb,932,1233,10,news article,7,yes,no,no,,no,0,
+68,fineweb,912,570,10,blog post,6,yes,no,no,,no,0,
+69,finepdfs,209,805,1,academic paper,5,yes,no,no,,no,0,
+70,finepdfs,231,2993,26,academic paper,7,yes,no,no,,no,0,
+71,c4,2281,3163,25,nav menu,1,no,no,no,SEO spam/gibberish repeated phrases,no,0,
+72,finepdfs,227,4143,23,form,6,yes,no,no,,no,0,
+73,c4,2278,6954,69,blog post,6,yes,no,no,,no,0,
+74,fineweb,937,3722,40,blog post,6,yes,no,no,,no,0,
+75,c4,2264,419,3,product page,5,yes,no,no,,no,0,
+76,c4,2273,2405,24,news article,7,yes,no,no,,yes,1,private_person
+77,c4,2257,721,4,product page,6,yes,no,no,,no,0,
+78,fineweb,941,4499,42,blog post,6,yes,no,no,,yes,4,private_person
+79,fineweb,939,781,9,blog post,5,yes,no,no,,no,0,
+80,c4,2277,1685,25,blog post,6,yes,no,no,,no,0,
+81,fineweb,915,1286,14,product page,5,yes,no,no,,no,0,
+82,fineweb,916,2276,20,news article,7,yes,no,no,,yes,28,private_person
+83,finepdfs,228,3558,25,government doc,6,yes,no,no,,no,0,
+84,c4,2268,1443,15,product page,5,yes,no,no,,no,0,
+85,fineweb,923,2462,17,news article,6,yes,no,no,,yes,4,private_person
+86,c4,2262,5959,67,blog post,6,yes,no,no,,no,0,
+87,fineweb,925,5607,74,blog post,7,yes,no,no,,yes,8,private_person
+88,fineweb,929,2249,24,blog post,6,yes,no,no,,no,0,
+89,fineweb,940,370,3,nav menu,2,no,no,no,website fragment with partial address,yes,4,"private_address,private_phone"
+90,finepdfs,205,2333,1,sports data,5,yes,no,no,,no,0,
+91,redpajama,654,1062,9,wikipedia,7,yes,no,no,Spanish language,no,0,
+92,redpajama,655,4877,40,blog post,7,yes,no,no,,yes,10,"private_address,private_email,private_phone,private_url"
+93,redpajama,656,520,7,blog post,6,yes,no,no,,no,0,
+94,redpajama,657,5839,59,blog post,7,yes,no,no,,no,0,
+95,redpajama,658,454,7,product page,5,yes,no,no,,no,0,
+96,redpajama,659,5491,86,blog post,7,yes,no,no,,no,0,
+97,redpajama,660,8115,42,news article,7,yes,no,no,,no,0,
+98,redpajama,661,6098,30,news article,7,yes,no,no,,no,0,
+99,redpajama,662,1178,13,blog post,6,yes,no,no,,no,0,
+100,redpajama,663,2318,18,news article,7,yes,no,no,,yes,2,private_person
+101,redpajama,664,1857,22,news article,6,yes,no,no,,no,0,
+102,redpajama,665,4556,38,blog post,7,yes,no,no,,yes,6,"private_person,private_url"
+103,redpajama,666,3055,18,academic page,7,yes,no,no,,yes,4,private_person
+104,redpajama,667,861,12,forum post,4,no,no,no,multiple unrelated Q&A fragments,no,0,
+105,redpajama,668,9631,95,product page,6,yes,no,no,,no,0,
+106,redpajama,669,3777,26,news article,7,yes,no,no,,yes,2,private_person
+107,redpajama,670,2094,6,forum post,6,yes,no,no,,no,0,
+108,redpajama,671,859,8,product page,6,yes,no,no,,yes,2,private_person
+109,redpajama,672,885,10,product page,5,yes,no,no,,no,0,
+110,redpajama,673,853,9,product page,4,yes,no,no,"investment pitch, vague/spammy",yes,2,private_email
+111,redpajama,674,3416,22,news article,7,yes,no,no,,yes,16,"private_email,private_person"
+112,redpajama,675,137,1,wikipedia,5,yes,no,no,"Portuguese language, disambiguation page",yes,2,private_person
+113,redpajama,676,745,8,forum post,5,yes,no,no,,no,0,
+114,redpajama,677,800,27,nav menu,2,no,no,no,"filmography list fragment, no context",yes,12,"private_date,private_person"
+115,redpajama,678,239,3,product page,6,yes,no,no,,no,0,
+116,redpajama,679,1265,19,blog post,6,yes,no,no,,yes,11,private_person
+117,redpajama,680,1916,27,product page,5,yes,no,no,,no,0,
+118,redpajama,681,4399,39,blog post,7,yes,no,no,,no,0,
+119,redpajama,682,1009,15,product page,2,no,no,no,"marketing fragment, broken/incomplete",yes,2,private_person
+120,redpajama,683,1444,16,news article,7,yes,no,no,,yes,4,private_person

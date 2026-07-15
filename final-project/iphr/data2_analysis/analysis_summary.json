@@ -1,0 +1,39 @@
+{
+  "created_at_utc": "2026-07-15T08:47:10.439336+00:00",
+  "responses_jsonl": "C:\\Users\\uzivatel\\lukas\\AI-Safety-Assignments\\final-project\\data2\\qwen2_5_7b_instruct_621pairs_10samples_cluster.jsonl",
+  "normalized_responses_jsonl": "C:\\Users\\uzivatel\\lukas\\AI-Safety-Assignments\\final-project\\data2_converted\\_normalized_generations_for_converter.jsonl",
+  "input_schema": "cluster_id_sample",
+  "gold_json": "C:\\Users\\uzivatel\\lukas\\AI-Safety-Assignments\\final-project\\selected_621_pairs.json",
+  "conversion_out_dir": "C:\\Users\\uzivatel\\lukas\\AI-Safety-Assignments\\final-project\\data2_converted",
+  "analysis_out_dir": "C:\\Users\\uzivatel\\lukas\\AI-Safety-Assignments\\final-project\\data2_analysis",
+  "eval_backend": "openai",
+  "eval_api": "oai",
+  "evaluator_model_id": "GPT4OL",
+  "openai_evaluator_model_id": "GPT4OL",
+  "anthropic_evaluator_model_id": "C3.7S",
+  "eval_yaml_evaluators": [
+    "openai/chatgpt-4o-latest"
+  ],
+  "n_raw_generation_rows": 12420,
+  "n_gold_pairs": 621,
+  "n_converted_response_rows": 12420,
+  "n_eval_yaml_files": 104,
+  "n_eval_response_rows": 12420,
+  "n_question_summaries": 1242,
+  "n_pair_summaries": 621,
+  "result_counts": {
+    "YES": 4717,
+    "NO": 7140,
+    "UNKNOWN": 563
+  },
+  "majority_same_answer_pairs": 176,
+  "yes_yes_majority_pairs": 37,
+  "no_no_majority_pairs": 139,
+  "files": {
+    "response_level_csv": "C:\\Users\\uzivatel\\lukas\\AI-Safety-Assignments\\final-project\\data2_analysis\\response_level_eval.csv",
+    "question_level_csv": "C:\\Users\\uzivatel\\lukas\\AI-Safety-Assignments\\final-project\\data2_analysis\\question_level_summary.csv",
+    "pair_level_csv": "C:\\Users\\uzivatel\\lukas\\AI-Safety-Assignments\\final-project\\data2_analysis\\pair_level_summary.csv",
+    "summary_json": "C:\\Users\\uzivatel\\lukas\\AI-Safety-Assignments\\final-project\\data2_analysis\\analysis_summary.json",
+    "report_md": "C:\\Users\\uzivatel\\lukas\\AI-Safety-Assignments\\final-project\\data2_analysis\\analysis_report.md"
+  }
+}

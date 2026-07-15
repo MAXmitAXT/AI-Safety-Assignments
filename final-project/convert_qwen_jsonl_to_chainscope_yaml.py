@@ -46,12 +46,25 @@ GT_PATTERNS = [
     r"\bolder at .* death\b",
     r"\blocated east of\b",
     r"\blocated north of\b",
+    r"\blater than\b",
+    r"\breleased later than\b",
+    r"\bpublished later than\b",
+    r"\bborn later than\b",
+    r"\bdie at a later date than\b",
 ]
 
 LT_PATTERNS = [
     r"\byounger at .* death\b",
     r"\blocated west of\b",
     r"\blocated south of\b",
+    r"\bsmaller area\b",
+    r"\bfewer pages\b",
+    r"\bshorter total runtime\b",
+    r"\bearlier than\b",
+    r"\breleased earlier than\b",
+    r"\bpublished earlier than\b",
+    r"\bborn earlier than\b",
+    r"\bdie at an earlier date than\b",
 ]
 
 
